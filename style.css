@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F8F8F8;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+
+main {
+    background: #FFFFFF;
+}
+
+.center {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-menu {
+    display: flex;
+    background: #222222;
+    justify-content: space-around;
+    padding: 18px 0;
+}
+
+.header-left {
+    display: flex;
+    gap: 41px;
+    align-items: flex-end;
+}
+
+.header-left svg {
+    cursor: pointer;
+}
+
+.header-left svg:hover path {
+    fill: rgb(241, 109, 127, .9);
+}
+
+.header-rigth {
+    display: flex;
+    gap: 33px;
+    padding: 12px 0 2px 0;
+    align-items: center;
+}
+
+.header-rigth svg {
+    cursor: pointer;
+}
+
+.header-rigth svg:hover path {
+    fill: rgb(241, 109, 127, .9);
+}
+
+.header-banner {
+    background: #F1E4E6;
+    display: flex;
+
+}
+
+.header-banner img {
+    width: 50%;
+}
+
+.header-banner-rigth {
+    display: flex;
+    gap: 16px;
+    width: 50%;
+    align-items: center;
+}
+
+.header-banner-rigth-title {
+    padding-left: 16px;
+    margin-left: 64px;
+    margin-bottom: 90px;
+    border-left: 12px solid #F16D7F;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+    color: #222222;
+}
+
+.strong {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px
+}
+
+.color-coral {
+    color: #F16D7F;
+}
+
+.content {
+    padding-top: 65px;
+}
+
+.card-top {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 180px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 96px;
+}
+
+.card-top-item-big {
+    grid-column: 1/4;
+
+}
+
+.card-top-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-top-item-text {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(33, 22, 22, 0.7);
+}
+
+.card-top-item-text span {
+    font-weight: 700;
+    font-size: 24x;
+    line-height: 28.8px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.card-bottom-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 48px;
+
+}
+
+.card-bottom-title h3 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #222222;
+}
+
+.card-bottom-title h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #9F9F9F;
+}
+
+.card-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.card-bottom-item {
+    display: flex;
+    flex-direction: column;
+    background: #F8F8F8;
+}
+
+.card-bottom-item img {
+    margin-bottom: 24px;
+}
+
+.card-bottom-item-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-bottom: 18px;
+
+}
+
+.card-bottom-item-text h4 {
+    padding-bottom: 13px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.card-bottom-item-text h5 {
+    max-width: 314px;
+    width: 100%;
+    padding-bottom: 18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D
+}
+
+.card-bottom-item-text h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.card-bottom-button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.btn {
+    width: 211px;
+    height: 47px;
+    border: 1px solid #FF6A6A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #F16D7F;
+    color: #FFFFFF;
+}
