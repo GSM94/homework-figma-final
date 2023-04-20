@@ -264,9 +264,9 @@ main {
     border: 1px solid #F16D7F;
 }
 /* ??? */
-/* .card-bottom-img:hover .card-bottom-img-text:hover svg {
-    background-color: #F16D7F;
-} */
+.card-bottom-img:hover .card-bottom-img-text:hover svg path {
+    fill: rgb(241, 109, 127, .9);
+}
 
 .card-bottom-img:hover .card-bottom-img-text:hover h3 {
     color: #F16D7F;
