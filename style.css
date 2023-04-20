@@ -15,6 +15,8 @@ main {
 }
 
 .center {
+    /* margin-left: calc(50% - 800px);
+    margin-right: calc(50% - 800px); */
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
@@ -56,10 +58,32 @@ main {
     fill: rgb(241, 109, 127, .9);
 }
 
+.basket {
+    position: relative;
+
+}
+
+.basket h5 {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #F16D7F;
+    top: -6px;
+    right: -7px;
+}
+
 .header-banner {
     background: #F1E4E6;
     display: flex;
-
 }
 
 .header-banner img {
@@ -68,7 +92,6 @@ main {
 
 .header-banner-rigth {
     display: flex;
-    gap: 16px;
     width: 50%;
     align-items: center;
 }
@@ -106,6 +129,10 @@ main {
     justify-content: center;
     gap: 30px;
     margin-bottom: 96px;
+}
+.card-top img {
+    width: 100%;
+    height: 100%;
 }
 
 .card-top-item-big {
@@ -183,8 +210,66 @@ main {
     background: #F8F8F8;
 }
 
-.card-bottom-item img {
+.card-bottom-img {
     margin-bottom: 24px;
+}
+
+/* .card-bottom-img img {
+    width: 100%; 
+} */
+
+.card-bottom-img-text {
+    display: none;
+}
+.card-bottom-img {
+    margin-bottom: 24px;
+    position: relative;
+    display: flex;
+}
+
+
+.card-bottom-img:hover .blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(58, 56, 56, 0.86);
+}
+
+.card-bottom-img:hover .card-bottom-img-text  {
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 33%;
+    width: 138px;
+    height: 43px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+   
+}
+
+.card-bottom-img:hover .card-bottom-img-text h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+/* при наведении меняются цвета */
+.card-bottom-img:hover .card-bottom-img-text:hover {
+    border: 1px solid #F16D7F;
+}
+/* ??? */
+/* .card-bottom-img:hover .card-bottom-img-text:hover svg {
+    background-color: #F16D7F;
+} */
+
+.card-bottom-img:hover .card-bottom-img-text:hover h3 {
+    color: #F16D7F;
 }
 
 .card-bottom-item-text {
@@ -221,7 +306,7 @@ main {
     color: #F16D7F;
 }
 
-.card-bottom-button{
+.card-bottom-button {
     display: flex;
     justify-content: center;
     padding-bottom: 60px;
@@ -238,7 +323,7 @@ main {
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     background: #F16D7F;
     color: #FFFFFF;
 }

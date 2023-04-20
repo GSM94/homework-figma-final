@@ -1,0 +1,69 @@
+@media(max-width: 767px) {
+    .center {
+        max-width: 375px;
+    }
+    .header-center {
+        width: 200px;
+    }
+    .header-menu {
+        display: flex;
+        justify-content: center;
+    }
+    .phone-none {
+        display: none;
+    }
+    
+    
+    .header-banner-rigth {
+        display: flex;
+        width: 100%;
+        height: 363px;
+    }
+
+    .header-banner-rigth-title {
+        width: 100%;
+        padding-left: 15px;
+        margin-left: 56px;
+        /* использован margin-left для выравнивания по центру */
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .strong {
+        font-size: 38px;
+        line-height: 46px
+    }
+
+    .card-top {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        /* display: grid;
+        grid-template-columns: repeat(1, 343px);
+        grid-template-rows: auto; */
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        margin-bottom: 96px;
+    }
+    .card-top-item-big {
+
+        /* grid-column: 1/4;
+        grid-row: 4/5; */
+    }
+
+    .card-top-item-big img {
+        width: 200%; /* Как уменьшить картинку как в макете? */
+        /* grid-column: 1/4;
+        grid-row: 4/5; */
+    }
+
+    .card-bottom-title {
+        margin-bottom: 64px;
+    }
+
+    .card-bottom {
+        grid-template-columns: repeat(1, 359px);
+        margin-bottom: 41px;
+    }
+    
+}
