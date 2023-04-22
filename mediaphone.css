@@ -1,33 +1,42 @@
 @media(max-width: 767px) {
     .center {
-        max-width: 375px;
+        margin-left: calc(50% - 187.5px);
+        margin-right: calc(50% - 187.5px);
+        /* max-width: 375px; */
     }
+
     .header-center {
         width: 200px;
     }
+
     .header-menu {
         display: flex;
         justify-content: center;
     }
+
     .phone-none {
         display: none;
     }
-    
-    
+
+    .header-banner {
+        justify-content: center;
+    }
+
     .header-banner-rigth {
         display: flex;
-        width: 100%;
+        width: auto;
         height: 363px;
     }
 
     .header-banner-rigth-title {
         width: 100%;
         padding-left: 15px;
-        margin-left: 56px;
+        margin-left: 0;
         /* использован margin-left для выравнивания по центру */
         font-size: 20px;
         line-height: 24px;
     }
+
     .strong {
         font-size: 38px;
         line-height: 46px
@@ -45,14 +54,23 @@
         gap: 32px;
         margin-bottom: 96px;
     }
+
     .card-top-item-big {
 
         /* grid-column: 1/4;
         grid-row: 4/5; */
     }
 
+    .card_top_phone_none {
+        display: none;
+    }
+
+    .card_top_phone {
+        display: inherit;
+    }
+
     .card-top-item-big img {
-        width: 200%; /* Как уменьшить картинку как в макете? */
+        /* width: 200%; /* Как уменьшить картинку как в макете? */
         /* grid-column: 1/4;
         grid-row: 4/5; */
     }
@@ -65,5 +83,85 @@
         grid-template-columns: repeat(1, 359px);
         margin-bottom: 41px;
     }
-    
+
+    .card-bottom-button {
+        padding-bottom: 96px;
+    }
+
+    .information {
+        padding: 48px 0 64px 0;
+        gap: 46px;
+    }
+
+
+    .information-card {
+        width: 347px;
+        height: 129px;
+        padding: 0 24px;
+    }
+
+    .bottom {
+        height: 550px;
+        background-image: url("./img/background_phone.png");
+    }
+
+    .order {
+        padding-top: 64px;
+        padding-bottom: 110.1px;
+        gap: 59px;
+    }
+
+    .order-card {
+        width: 343px;
+        height: 194px;
+        gap: 30px;
+    }
+
+    #order-card-2 {
+        height: 123px;
+        gap: 22px;
+    }
+
+    figure img {
+        width: 91px;
+    }
+
+    figure h3 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #222224;
+    }
+
+    .order-card h2 {
+        line-height: 153.2%;
+    }
+
+    .order-card h2 span {
+        font-size: 14px;
+        line-height: 21.45px;
+    }
+
+    .input-enter-email {
+        width: 245px;
+        height: 46px;
+    }
+
+    .order-btn {
+        height: 46px;
+    }
+
+    .footer {
+        padding-top: 34px;
+        height: 143px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        
+    }
+
+    .footer-center {
+        width: 0;
+    }
 }
