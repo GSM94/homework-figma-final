@@ -1,3 +1,17 @@
+@media(max-width: 1170px) {
+    .card-top {
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: 217px 149px;
+        gap: 25px;
+        margin-bottom: 110px;
+    }
+    .card-bottom {
+        grid-template-columns: repeat(3, 317px);
+        gap: 23px;
+    }
+    
+    
+}
 @media(max-width: 1024px)  {
     .center {
         padding-left: calc(50% - 384px);

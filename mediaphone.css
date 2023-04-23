@@ -58,11 +58,7 @@
         width: 343px;
 
     }
-    .card-top-item-big {
 
-        /* grid-column: 1/4;
-        grid-row: 4/5; */
-    }
 
     .card_top_phone_none {
         display: none;
@@ -72,11 +68,6 @@
         display: inherit;
     }
 
-    .card-top-item-big img {
-        /* width: 200%; /* Как уменьшить картинку как в макете? */
-        /* grid-column: 1/4;
-        grid-row: 4/5; */
-    }
 
     .card-bottom-title {
         margin-bottom: 64px;
