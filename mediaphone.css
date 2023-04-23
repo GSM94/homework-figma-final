@@ -50,11 +50,14 @@
         grid-template-columns: repeat(1, 343px);
         grid-template-rows: auto; */
         align-items: center;
-        justify-content: center;
         gap: 32px;
         margin-bottom: 96px;
     }
 
+    .card-top-item {
+        width: 343px;
+
+    }
     .card-top-item-big {
 
         /* grid-column: 1/4;

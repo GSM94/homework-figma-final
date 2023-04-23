@@ -10,6 +10,11 @@
     .header-menu {
         justify-content: center;
     }
+
+    .menu-mobaile-open {
+        display: none;
+    }
+
     .header-banner-rigth-title {
         padding-left: 16px;
         margin-left: 39px;

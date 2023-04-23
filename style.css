@@ -303,10 +303,6 @@ details[open]>summary::before {
     background: #F8F8F8;
 }
 
-.card-bottom-img {
-    margin-bottom: 24px;
-    transition: all .3s;
-}
 
 /* .card-bottom-img img {
     width: 100%; 
@@ -325,7 +321,7 @@ details[open]>summary::before {
     margin-bottom: 24px;
     position: relative;
     display: flex;
-
+    transition: all .3s;
 }
 
 
