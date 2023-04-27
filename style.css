@@ -468,9 +468,9 @@ details[open]>summary::before {
 .information {
     padding: 104px 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat(3, 360px);
     gap: 30px;
+    justify-content: center;
 }
 
 .information-card {
