@@ -1,3 +1,11 @@
+@media(min-width: 1620px) {
+    .header-center {
+        width: 859px;
+    }
+    .header-menu {
+        justify-content: center;
+    }
+}
 @media(max-width: 1170px) {
     .card-top {
         grid-template-columns: repeat(3, 300px);
@@ -25,13 +33,16 @@
         justify-content: center;
     }
 
-    .menu-mobaile-open {
+    /* .menu-mobaile-open {
         display: none;
+    } */
+    .promo {
+        
+        gap: 39px;
     }
-
-    .header-banner-rigth-title {
+    .promo-rigth-title {
         padding-left: 16px;
-        margin-left: 39px;
+        /* margin-left: 39px; */
         margin-bottom: 13px;
         font-size: 24px;
         line-height: 28.8px;
@@ -115,4 +126,3 @@
         width: 305px;
     }
 }
-

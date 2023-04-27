@@ -1,7 +1,7 @@
 @media(max-width: 767px) {
     .center {
-        margin-left: calc(50% - 187.5px);
-        margin-right: calc(50% - 187.5px);
+        padding-left: calc(50% - 187.5px);
+        padding-right: calc(50% - 187.5px);
         /* max-width: 375px; */
     }
 
@@ -18,21 +18,19 @@
         display: none;
     }
 
-    .header-banner {
+    .promo {
         justify-content: center;
     }
 
-    .header-banner-rigth {
+    .promo-rigth {
         display: flex;
         width: auto;
         height: 363px;
     }
 
-    .header-banner-rigth-title {
+    .promo-rigth-title {
         width: 100%;
         padding-left: 15px;
-        margin-left: 0;
-        /* использован margin-left для выравнивания по центру */
         font-size: 20px;
         line-height: 24px;
     }

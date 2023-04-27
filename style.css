@@ -12,9 +12,8 @@ body {
     background: #F8F8F8;
     font-family: 'Lato', sans-serif;
     font-style: normal;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
-
 
 img {
     width: 100%;
@@ -27,7 +26,11 @@ main {
 .center {
     padding-left: calc(50% - 800px);
     padding-right: calc(50% - 800px);
+}
 
+.top {
+    position: relative;
+    overflow: hidden;
 }
 
 .header-menu {
@@ -62,7 +65,7 @@ main {
     align-items: center;
 }
 
-summary {
+/* summary {
     display: block;
 }
 
@@ -77,19 +80,31 @@ summary::before {
 
 details[open]>summary::before {
     content: url(./img/Forma\ 2.svg);
+} */
+
+
+.header_checkbox {
+    position: absolute;
+    visibility: hidden;
+    left: -9999999px;
 }
 
-.menu-mobaile {
-    position: relative;
+.header_checkbox:checked~.menu-mobaile-open {
+    right: 0;
+    overflow: hidden;
 }
 
 .menu-mobaile-open {
     position: absolute;
-    padding: 32px;
-    background: #FFFFFF;
+    top: 82px;
+    right: -336px;
+    z-index: 1;
+    transition: right 1s;
     width: 232px;
-    left: 148px;
-    top: 50px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 32px;
+
 }
 
 .menu-mobaile-heading {
@@ -149,7 +164,6 @@ details[open]>summary::before {
 
 .basket {
     position: relative;
-
 }
 
 .basket h5 {
@@ -170,30 +184,35 @@ details[open]>summary::before {
     right: -7px;
 }
 
-.header-banner {
+.promo {
     background: #F1E4E6;
     display: flex;
+    gap: 64px;
 }
 
-.header-banner img {
+.promo img {
     width: 50%;
 }
 
-.header-banner-rigth {
+.promo-rigth {
     display: flex;
     width: 50%;
     align-items: center;
 }
 
-.header-banner-rigth-title {
+.promo-rigth-title {
     padding-left: 16px;
-    margin-left: 64px;
+    /* margin-left: 64px; */
     margin-bottom: 90px;
     border-left: 12px solid #F16D7F;
     font-weight: 700;
     font-size: 32px;
     line-height: 38.4px;
     color: #222222;
+}
+
+.bbb {
+    display: flex;
 }
 
 .strong {
@@ -208,6 +227,7 @@ details[open]>summary::before {
 
 .content {
     padding-top: 65px;
+    background: linear-gradient(63deg, rgb(146 146 146), 16%, rgb(252, 252, 252));
 }
 
 .card-top {
@@ -239,7 +259,6 @@ details[open]>summary::before {
     justify-content: center;
     align-items: center;
 }
-
 
 .card-top-item-text {
     position: absolute;
@@ -442,17 +461,20 @@ details[open]>summary::before {
     color: #FFFFFF;
 }
 
-.information {
-    padding: 104px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 360px);
-    justify-content: center;
-    align-items: flex-end;
-    gap: 30px;
+.information-back {
     background: #222224;
 }
 
+.information {
+    padding: 104px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
 .information-card {
+    max-width: 360px;
     height: 134px;
     padding: 0 30px;
     display: flex;
@@ -483,13 +505,17 @@ details[open]>summary::before {
     color: #FBFBFB;
 }
 
+.botom-gradient {
+    background: linear-gradient(63deg, rgb(146 146 146), 16%, rgb(252, 252, 252));
+}
+
 .bottom {
     position: relative;
     display: flex;
     justify-content: center;
     height: 448px;
     background-image: url("./img/background.png");
-
+    box-shadow: -46px 196px 77px rgb(0 0 0 / 30%);
 }
 
 /* .order-background {
@@ -506,7 +532,6 @@ details[open]>summary::before {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     gap: 223px;
     background: rgba(244, 244, 244, 0.7);
 }
@@ -552,7 +577,7 @@ figure h3 {
 }
 
 form {
-    
+
     display: flex;
     justify-content: center;
 }
@@ -570,20 +595,23 @@ form {
     color: #222224;
     opacity: 0.67;
     background: #E1E1E1;
-    outline-offset: none;
+    outline-offset: none !important;
+    outline: none !important;
+
 }
 
-/* .input-enter-email:focus-visible {
-    outline: none;
-    outline-offset: none;
-} */
+.input-enter-email:focus-visible {
+    outline: none !important;
+    outline-offset: none !important;
+}
 
 .input-enter-email:focus-visible {
     outline-offset: none;
     outline: none;
     border: 1px solid #F16D7F;
     background: #f0e9e9;
-    /* transition: all .3s; рабоатет некорректно */
+    transition: all .3s;
+    /* рабоатет некорректно  */
 }
 
 .order-btn {
