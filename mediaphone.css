@@ -10,8 +10,12 @@
     }
 
     .header-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .phone-none {
@@ -19,10 +23,14 @@
     }
 
     .promo {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .promo-rigth {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         width: auto;
         height: 363px;
@@ -41,13 +49,21 @@
     }
 
     .card-top {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         /* display: grid;
         grid-template-columns: repeat(1, 343px);
         grid-template-rows: auto; */
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 32px;
         margin-bottom: 96px;
     }
@@ -72,6 +88,7 @@
     }
 
     .card-bottom {
+        /* -ms-grid-columns: (359px)[1]; */
         grid-template-columns: repeat(1, 359px);
         margin-bottom: 41px;
     }
@@ -147,9 +164,15 @@
     .footer {
         padding-top: 34px;
         height: 143px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         
     }
 

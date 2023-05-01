@@ -1,6 +1,14 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -34,16 +42,25 @@ main {
 }
 
 .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: #222222;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 18px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .header-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 41px;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
 }
 
@@ -60,9 +77,13 @@ main {
 }
 
 .header-rigth {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 33px;
     padding: 12px 0 2px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -100,9 +121,12 @@ details[open]>summary::before {
     top: 82px;
     right: -336px;
     z-index: 1;
+    -webkit-transition: right 1s;
+    -o-transition: right 1s;
     transition: right 1s;
     width: 232px;
     background: #FFFFFF;
+    -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     padding: 32px;
 
@@ -117,13 +141,23 @@ details[open]>summary::before {
 }
 
 .menu-mobaile-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
 }
 
 .menu-mobaile-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 12px;
 }
@@ -137,7 +171,12 @@ details[open]>summary::before {
 
 .menu-mobile-list {
     padding-left: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 11px;
     list-style-type: none;
@@ -172,8 +211,14 @@ details[open]>summary::before {
     height: 19px;
     border-radius: 50%;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border: none;
     font-weight: 400;
@@ -187,6 +232,8 @@ details[open]>summary::before {
 
 .promo {
     background: #F1E4E6;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 64px;
 }
@@ -196,8 +243,12 @@ details[open]>summary::before {
 }
 
 .promo-rigth {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -213,6 +264,8 @@ details[open]>summary::before {
 }
 
 .bbb {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -228,17 +281,55 @@ details[open]>summary::before {
 
 .content {
     padding-top: 65px;
+    background: -o-linear-gradient(27deg, rgb(146 146 146), 16%, rgb(252, 252, 252));
     background: linear-gradient(63deg, rgb(146 146 146), 16%, rgb(252, 252, 252));
 }
 
 .card-top {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 360px 30px 360px 30px 360px;
     grid-template-columns: repeat(3, 360px);
+    -ms-grid-rows: 260px 30px 180px;
     grid-template-rows: 260px 180px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
     margin-bottom: 96px;
+}
+
+.card-top>*:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.card-top>*:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.card-top>*:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.card-top>*:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.card-top>*:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.card-top>*:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
 }
 
 .card-top img {
@@ -247,6 +338,8 @@ details[open]>summary::before {
 }
 
 .card-top-item-big {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-column: 1/4;
 }
 
@@ -256,17 +349,30 @@ details[open]>summary::before {
 
 .card-top-item {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .card-top-item-text {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     font-weight: 400;
     font-size: 16px;
@@ -285,8 +391,15 @@ details[open]>summary::before {
 }
 
 .card-bottom-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 6px;
     margin-bottom: 48px;
@@ -310,32 +423,49 @@ details[open]>summary::before {
 }
 
 .card-bottom {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 360px 30px 360px 30px 360px;
     grid-template-columns: repeat(3, 360px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
     margin-bottom: 48px;
 }
 
 .card-bottom-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background: #F8F8F8;
 }
 
 .blur {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
 .card-bottom-img-text {
     display: none;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 
 .card-bottom-img {
     margin-bottom: 24px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 
@@ -357,9 +487,18 @@ details[open]>summary::before {
     width: 138px;
     height: 43px;
     border: 1px solid #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 11px;
     /* transition: all .5s; */
@@ -393,7 +532,12 @@ details[open]>summary::before {
 }
 
 .card-bottom-item-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 16px;
     padding-bottom: 18px;
@@ -425,6 +569,8 @@ details[open]>summary::before {
     line-height: 19px;
     color: #F16D7F;
     cursor: pointer;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 
@@ -434,7 +580,11 @@ details[open]>summary::before {
 }
 
 .card-bottom-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-bottom: 95px;
 }
@@ -448,6 +598,8 @@ details[open]>summary::before {
     line-height: 19px;
     color: #F26376;
     cursor: pointer;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
 }
 
@@ -462,9 +614,13 @@ details[open]>summary::before {
 
 .information {
     padding: 104px 0;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 360px 30px 360px 30px 360px;
     grid-template-columns: repeat(3, 360px);
     gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -472,9 +628,18 @@ details[open]>summary::before {
     max-width: 360px;
     height: 134px;
     padding: 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -509,8 +674,14 @@ details[open]>summary::before {
 }
 
 .bottom {
-    
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 448px;
     /* background-image: url("./img/background.png"); */
@@ -523,9 +694,18 @@ details[open]>summary::before {
     width: 100vw;
     padding-top: 97px;
     padding-bottom: 126px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 223px;
     background: rgba(244, 244, 244, 0.7);
@@ -534,9 +714,18 @@ details[open]>summary::before {
 .order-card {
     width: 360px;
     height: 225px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
 }
@@ -573,7 +762,13 @@ figure h3 {
 
 form {
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -617,6 +812,8 @@ form {
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
     transition: all .5s;
     cursor: pointer;
 }
@@ -629,8 +826,13 @@ form {
 
 .footer {
     height: 79px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: #222224;
 }
@@ -645,7 +847,12 @@ form {
 
 
 .footer-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     gap: 7.29px
 }
@@ -653,8 +860,14 @@ form {
 .footer-svg {
     width: 31.45px;
     height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: #FFFFFF;
     cursor: pointer;
