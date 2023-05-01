@@ -38,6 +38,7 @@ main {
     background: #222222;
     justify-content: space-around;
     padding: 18px 0;
+    align-items: center;
 }
 
 .header-left {
@@ -277,7 +278,7 @@ details[open]>summary::before {
 
 .card-top-item-text span {
     font-weight: 700;
-    font-size: 24x;
+    font-size: 24px;
     line-height: 28.8px;
     text-align: center;
     color: #F16D7F;
@@ -321,11 +322,6 @@ details[open]>summary::before {
     flex-direction: column;
     background: #F8F8F8;
 }
-
-
-/* .card-bottom-img img {
-    width: 100%; 
-} */
 
 .blur {
     transition: all .5s;
@@ -401,7 +397,6 @@ details[open]>summary::before {
     flex-direction: column;
     padding-left: 16px;
     padding-bottom: 18px;
-
 }
 
 .card-bottom-item-text h4 {
@@ -485,7 +480,6 @@ details[open]>summary::before {
 
 .information-card svg path {
     fill: #F16D7F;
-    ;
 }
 
 .information-card h5 {
@@ -506,26 +500,27 @@ details[open]>summary::before {
 }
 
 .botom-gradient {
-    background: linear-gradient(63deg, rgb(146 146 146), 16%, rgb(252, 252, 252));
+    background: url("./img/background.png");
+    background-size: cover;
+}
+
+.background-img {
+    background-size: cover;
 }
 
 .bottom {
-    position: relative;
+    
     display: flex;
     justify-content: center;
     height: 448px;
-    background-image: url("./img/background.png");
-    box-shadow: -46px 196px 77px rgb(0 0 0 / 30%);
-}
+    /* background-image: url("./img/background.png"); */
 
-/* .order-background {
-    position: absolute;
-    background-image: url("./img/background.png");
-} */
+
+}
 
 .order {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     padding-top: 97px;
     padding-bottom: 126px;
     display: flex;
@@ -595,23 +590,19 @@ form {
     color: #222224;
     opacity: 0.67;
     background: #E1E1E1;
-    outline-offset: none !important;
     outline: none !important;
-
 }
 
 .input-enter-email:focus-visible {
     outline: none !important;
-    outline-offset: none !important;
 }
 
 .input-enter-email:focus-visible {
-    outline-offset: none;
     outline: none;
     border: 1px solid #F16D7F;
     background: #f0e9e9;
-    transition: all .3s;
-    /* рабоатет некорректно  */
+    /* transition: all .3s; */
+    /* работает некорректно  */
 }
 
 .order-btn {
@@ -634,7 +625,6 @@ form {
     background: #FFFFFF;
     color: #F16D7F;
     border: 1px solid #F16D7F;
-
 }
 
 .footer {

@@ -94,7 +94,7 @@
 
     .bottom {
         height: 550px;
-        background-image: url("./img/background_phone.png");
+        /* background-image: url("./img/background_phone.png"); */
     }
 
     .order {
