@@ -887,10 +887,11 @@ form {
     width: 80%;
     height: 66%;
     bottom: 5px;
+    transition: all .5s;
 
 }
 
-.top-btn:hover {
-    transition: all .5s;
+.top-btn:hover svg {
     transform: translateY(-10px);
+    fill: #F16D7F;;
 }
